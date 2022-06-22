@@ -1,0 +1,19 @@
+login:
+    type: rest
+    resource: AppBundle\Controller\RestLoginController
+
+
+accounts:
+    type: rest
+    resource: AppBundle\Controller\AccountsController
+
+users:
+    type: rest
+    resource: AppBundle\Controller\UsersController
+
+
+# -- ACCOUNT CHILDREN --
+files:
+    type:     rest
+    parent:   accounts
+    resource: AppBundle\Controller\FilesController
